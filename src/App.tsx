@@ -1,16 +1,15 @@
 import React from "react";
 import "./App.css";
-import { Paper, Card, Typography } from "@material-ui/core";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./components/home/home";
 
 function App() {
   return (
-    <div className="App">
-      <Paper>
-        <Card>
-          <Typography>Hello World!</Typography>
-        </Card>
-      </Paper>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" component={Home} />
+      </Switch>
+    </Router>
   );
 }
 
