@@ -6,7 +6,6 @@ import { getPosts } from "../../actions/postActions";
 const Home = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    console.log("mounted");
     dispatch(getPosts());
   }, [dispatch]);
   return (
