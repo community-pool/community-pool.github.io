@@ -4,7 +4,6 @@ export const GET_POSTS_LOADING = "GET_POSTS_LOADING";
 export const GET_POSTS = "GET_POSTS";
 export const GET_POSTS_ERROR = "GET_POSTS_ERROR";
 export const getPosts = () => (dispatch: any) => {
-  console.log("FETCHING");
   dispatch({
     type: GET_POSTS_LOADING
   });
