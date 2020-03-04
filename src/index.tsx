@@ -7,10 +7,15 @@ import { ThemeProvider } from "@material-ui/styles";
 import theme from "./theme";
 import { CssBaseline } from "@material-ui/core";
 
+import { Provider } from "react-redux";
+import store from "./store";
+
 ReactDOM.render(
   <ThemeProvider theme={theme}>
     <CssBaseline>
-      <App />
+      <Provider store={store}>
+        <App />
+      </Provider>
     </CssBaseline>
   </ThemeProvider>,
   document.getElementById("root")
